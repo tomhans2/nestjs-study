@@ -3,16 +3,27 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email": "hanshua11ng@123.com",
+  "email": "hansh1ng1111@123.com",
   "password": "12345336"
 }
 
+### Create a new user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "hansh1ng1111@123.com",
+  "password": "12345336"
+}
+
+
+
 ### Find a particular user
-GET http://localhost:3000/auth/1
+GET http://localhost:3000/auth/2
 
 
 ### Find all users with email
-Get http://localhost:3000/auth?email=asd@asd.com
+Get http://localhost:3000/auth?email=hanshua11ng@123.com
 
 
 ### Delete a user given the id
@@ -25,3 +36,10 @@ Content-Type: application/json
 {
   "email": "aaa@aaa.com"
 }
+
+
+### Set a color
+GET http://localhost:3000/auth/colors/asdfdsafsda
+
+### Get a color
+GET http://localhost:3000/auth/colors
