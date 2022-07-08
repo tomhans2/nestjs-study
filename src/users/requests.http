@@ -17,6 +17,12 @@ Content-Type: application/json
 }
 
 
+### Signout
+POST http://localhost:3000/auth/signout
+
+
+### Create a new user
+GET  http://localhost:3000/auth/whoami
 
 ### Find a particular user
 GET http://localhost:3000/auth/2
