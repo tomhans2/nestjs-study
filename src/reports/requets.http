@@ -1,0 +1,24 @@
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+  "make": "Honda",
+  "model": "Civic",
+  "year": 2000,
+  "mileage": 10000,
+  "lng": 122.4343,
+  "lat": 37.7152,
+  "price": 15000
+}
+
+### Approve an existing report
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+  "approved": true
+}
+
+
+### Get the estimate of existing vehicle
+GET http://localhost:3000/reports?make=Honda&model=Civic&year=2000&mileage=10000&lng=122&lat=37
